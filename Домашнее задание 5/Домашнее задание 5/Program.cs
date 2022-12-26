@@ -10,19 +10,13 @@ namespace Домашнее_задание_5
     {
         static void Main(string[] args)
         {
+            double x = Formula(2, 5, 5) + Formula(3, 7, 5) + Formula(5, 11, 11);
 
-            double a = Program.Formula(2, 5);
-            double b = Program.Formula(3, 7);
-            double c = Program.Formula(5,11);
-
-            double x = a + b + c;
-
-            Console.WriteLine(Math.Round(x, 2));
-
+            Console.WriteLine(Math.Round(x, 3));
         }
-        static double Formula(double y, double z)
+        static double Formula(double y, double z, double w)
         {
-            return (y + Math.Sin(y)) / (z + Math.Cos(z));
+            return (y + Math.Sin(y)) / (z + Math.Cos(w));
         }
     }
 }
